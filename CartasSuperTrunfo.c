@@ -28,6 +28,18 @@ int main() {
     printf("PIB: R$ %.2f bilhões\n", PIB2);
     printf("Pontos Turísticos: %d\n", pontos2);
 
-    return 0;
-}
+    printf("\nComparação de cartas (Atributo: População):\n");
+    printf("Carta 1 - %s (%s): %d\n", Cidade1, Estado1, populacao1);
+    printf("Carta 2 - %s (%s): %d\n", Cidade2, Estado2, Populacao2);
 
+    if (populacao1 > Populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", Cidade1);
+
+    } else if (Populacao2 > populacao1) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", Cidade2);
+    } else {
+        printf("Empate! Ambas as cartas têm a mesma população.\n");
+
+
+    }     
+}
